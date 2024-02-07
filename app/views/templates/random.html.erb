@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dice Roll</title>
+</head>
+
+<body>
+  <h1> <%= @dice%>d<%=@sides%>  </h1>
+ 
+  <ul>
+  <% @dice.times do |num_dice| %>
+  <li> <%= rand(1..@sides) %> </li>
+  <%end%>
+  </ul>
+</body>
+
+</html>
